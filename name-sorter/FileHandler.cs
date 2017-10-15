@@ -9,6 +9,7 @@ namespace name_sorter
     //Originally named FileParser, then I figured, why not make it Parse and Write. Thus, FileHandler.
     class FileHandler
     {
+
         //The filename that the system will read. MUST be .txt
         private String fileName;
 
@@ -21,13 +22,22 @@ namespace name_sorter
         public List<Name> ParseFile()
         {
             List<Name> unsortedNames = new List<Name>();
-            using (StreamReader reader = new StreamReader(this.fileName))
+            try
             {
-                String currentLine;
-                while ((currentLine = reader.ReadLine()) != null)
+                
+                using (StreamReader reader = new StreamReader(this.fileName))
                 {
-                    unsortedNames.Add(new Name(currentLine));
+                    String currentLine;
+                    while ((currentLine = reader.ReadLine()) != null)
+                    {
+                        unsortedNames.Add(new Name(currentLine));
+                    }
                 }
+                
+            }
+            catch(FileNotFoundException)
+            {
+                Console.WriteLine("File Not Found");
             }
             return unsortedNames;
         }

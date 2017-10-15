@@ -5649,11 +5649,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kuruma\\source\\repos\\name-sorter\\name-sorter.Tests\\name-sorter.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter.Tests\\name-sorter.Tests.csproj",
       "projectName": "name-sorter.Tests",
-      "projectPath": "C:\\Users\\Kuruma\\source\\repos\\name-sorter\\name-sorter.Tests\\name-sorter.Tests.csproj",
+      "projectPath": "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter.Tests\\name-sorter.Tests.csproj",
       "packagesPath": "C:\\Users\\Kuruma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kuruma\\source\\repos\\name-sorter\\name-sorter.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5672,8 +5672,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Kuruma\\source\\repos\\name-sorter\\name-sorter\\name-sorter.csproj": {
-              "projectPath": "C:\\Users\\Kuruma\\source\\repos\\name-sorter\\name-sorter\\name-sorter.csproj"
+            "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter\\name-sorter.csproj": {
+              "projectPath": "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter\\name-sorter.csproj"
             }
           }
         }

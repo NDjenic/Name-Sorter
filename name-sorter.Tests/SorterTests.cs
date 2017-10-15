@@ -9,7 +9,7 @@ namespace name_sorter.Tests
     [TestClass]
     public class SorterTests
     {
-        String fileName = "C:\\Users\\Kuruma\\source\\repos\\name-sorter\\unsorted-names-list.txt";
+        String fileName = System.IO.Directory.GetCurrentDirectory() + "\\unsorted-names-list.txt";
 
         [TestMethod]
         public void SameNumberOfNames()
@@ -73,6 +73,4 @@ namespace name_sorter.Tests
             CollectionAssert.AreEqual(expected, actual, "All names have been parsed and ordered alphabetically");
         }
     }
-    
-    
 }
