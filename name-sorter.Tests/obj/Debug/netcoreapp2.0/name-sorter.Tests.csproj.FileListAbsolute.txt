@@ -1,0 +1,16 @@
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\name-sorter.Tests.deps.json
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\name-sorter.Tests.runtimeconfig.json
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\name-sorter.Tests.runtimeconfig.dev.json
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\name-sorter.Tests.dll
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\name-sorter.Tests.pdb
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\name-sorter.dll
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\bin\Debug\netcoreapp2.0\name-sorter.pdb
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\obj\Debug\netcoreapp2.0\name-sorter.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\obj\Debug\netcoreapp2.0\name-sorter.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\obj\Debug\netcoreapp2.0\name-sorter.Tests.AssemblyInfoInputs.cache
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\obj\Debug\netcoreapp2.0\name-sorter.Tests.AssemblyInfo.cs
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\obj\Debug\netcoreapp2.0\name-sorter.Tests.dll
+C:\Users\Kuruma\source\repos\name-sorter\name-sorter.Tests\obj\Debug\netcoreapp2.0\name-sorter.Tests.pdb
