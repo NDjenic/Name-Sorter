@@ -12,6 +12,21 @@ namespace name_sorter.Tests
     {
         String fileName = System.IO.Directory.GetCurrentDirectory() + "\\unsorted-names-list.txt";
 
+        private List<String> GetNames(bool sort)
+        {
+            SorterProgram sorterProgram = new SorterProgram(fileName);
+            if (sort)
+            {
+                sorterProgram.DoSortingWork();
+            }
+            else
+            {
+                sorterProgram.JustParseNames();
+            }
+            return sorterProgram.GetNames(); //Made it so because CollectionAssert.AreEqual DOES NOT like complex classes.
+        }
+
+
         [TestMethod]
         public void FileIsParsed()
         {
@@ -30,17 +45,15 @@ namespace name_sorter.Tests
                 "Frankie Conner Ritter",
             };
 
-            NameSorter namesorter = new NameSorter(fileName);
-            List<String> actual = namesorter.GetNames(); //Made it so because CollectionAssert.AreEqual DOES NOT like complex classes.
+            List<String> actual = this.GetNames(false);
             CollectionAssert.AreEqual(expected, actual, "All names have been parsed");
         }
 
         [TestMethod]
         public void SortedNameFileIsWritten()
         {
-            NameSorter nameSorter = new NameSorter(fileName);
-            nameSorter.SortNames();
-            nameSorter.GenerateNames();
+            SorterProgram sorterProgram = new SorterProgram(fileName);
+            sorterProgram.DoSortingWork();
 
             if (!File.Exists(System.IO.Directory.GetCurrentDirectory() + "\\sorted-names-list.txt"))
             {

@@ -673,9 +673,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter\\name-sorter.csproj",
-      "projectName": "name-sorter",
-      "projectPath": "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter\\name-sorter.csproj",
+      "projectUniqueName": "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter\\namesorter.csproj",
+      "projectName": "namesorter",
+      "projectPath": "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter\\namesorter.csproj",
       "packagesPath": "C:\\Users\\Kuruma\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Kuruma\\source\\Name-Sorter\\name-sorter\\obj\\",
       "projectStyle": "PackageReference",

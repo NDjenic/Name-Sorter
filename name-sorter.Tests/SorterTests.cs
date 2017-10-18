@@ -6,20 +6,32 @@ using name_sorter;
 
 namespace name_sorter.Tests
 {
+
     [TestClass]
     public class SorterTests
     {
         String fileName = System.IO.Directory.GetCurrentDirectory() + "\\unsorted-names-list.txt";
+
+        private List<String> GetNames(bool sort)
+        {
+            SorterProgram sorterProgram = new SorterProgram(fileName);
+            if (sort)
+            {
+                sorterProgram.DoSortingWork();
+            }
+            else
+            {
+                sorterProgram.JustParseNames();
+            }
+            return sorterProgram.GetNames(); //Made it so because CollectionAssert.AreEqual DOES NOT like complex classes.
+        }
 
         [TestMethod]
         public void SameNumberOfNames()
         {
             //CollectionAssert.AreEquivalent
             int expectedCount = 11;
-
-            NameSorter namesorter = new NameSorter(fileName);
-            int actualCount = namesorter.GetNames().Count; //Made it so because CollectionAssert.AreEqual DOES NOT like complex classes.
-
+            int actualCount = this.GetNames(false).Count; //Made it so because CollectionAssert.AreEqual DOES NOT like complex classes.
             Assert.AreEqual(expectedCount, actualCount, "Actual count (" + actualCount + ") matches expected count (" + expectedCount + ")");
         }
 
@@ -41,8 +53,7 @@ namespace name_sorter.Tests
                 "Frankie Conner Ritter",
             };
 
-            NameSorter namesorter = new NameSorter(fileName);
-            List<String> actual = namesorter.GetNames(); //Made it so because CollectionAssert.AreEqual DOES NOT like complex classes.
+            List<String> actual = this.GetNames(false);
             CollectionAssert.AreEqual(expected, actual, "All names have been parsed");
         }
 
@@ -66,9 +77,7 @@ namespace name_sorter.Tests
             };
 
             //Act
-            NameSorter namesorter = new NameSorter(fileName);
-            namesorter.SortNames();
-            List<String> actual = namesorter.GetNames(); //Made it so because CollectionAssert.AreEqual DOES NOT like complex classes.
+            List<String> actual = this.GetNames(true);
 
             CollectionAssert.AreEqual(expected, actual, "All names have been parsed and ordered alphabetically");
         }

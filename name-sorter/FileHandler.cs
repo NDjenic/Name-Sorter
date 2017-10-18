@@ -1,58 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.IO;
 
 namespace name_sorter
 {
-    //Originally named FileParser, then I figured, why not make it Parse and Write. Thus, FileHandler.
-    class FileHandler
+    public class FileHandler //Both FileParser and FileWriter need a filename, thus why not make them subclasses to this?
     {
-
         //The filename that the system will read. MUST be .txt
-        private String fileName;
+        protected String fileName { get; set; }
 
         public FileHandler(String fileName)
         {
             this.fileName = fileName;
-        }
-
-        //Fills a list of unsorted names.
-        public List<Name> ParseFile()
-        {
-            List<Name> unsortedNames = new List<Name>();
-            try
+            if (!fileName.EndsWith("txt"))
             {
-                
-                using (StreamReader reader = new StreamReader(this.fileName))
-                {
-                    String currentLine;
-                    while ((currentLine = reader.ReadLine()) != null)
-                    {
-                        unsortedNames.Add(new Name(currentLine));
-                    }
-                }
-                
-            }
-            catch(FileNotFoundException)
-            {
-                Console.WriteLine("File Not Found");
-            }
-            return unsortedNames;
-        }
-
-        public void WriteFile(List<Name> names)
-        {
-            String outputFileName = Path.GetDirectoryName(this.fileName) + "\\sorted-names-list.txt";
-
-            using (StreamWriter writer = new StreamWriter(outputFileName, false))
-            {
-                foreach (Name name in names)
-                {
-                    Console.WriteLine(name.ToString());
-                    writer.WriteLine(name.ToString());
-                }
+                throw new InvalidFileException(fileName);
             }
         }
     }
