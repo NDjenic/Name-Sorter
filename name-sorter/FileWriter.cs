@@ -10,7 +10,6 @@ namespace name_sorter
     {
         public FileWriter(String fileName) : base(fileName)
         {
-            base.fileName = fileName;
         }
 
         public void WriteFile(List<Name> names)

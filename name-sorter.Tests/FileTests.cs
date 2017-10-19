@@ -8,7 +8,7 @@ using name_sorter;
 namespace name_sorter.Tests
 {
     [TestClass]
-    public class FileParseTest
+    public class FileTests
     {
         String fileName = System.IO.Directory.GetCurrentDirectory() + "\\unsorted-names-list.txt";
 
@@ -60,6 +60,5 @@ namespace name_sorter.Tests
                 Assert.Fail("File Does Not Exist");
             }
         }
-   
     }
 }

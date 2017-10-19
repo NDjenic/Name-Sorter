@@ -39,17 +39,9 @@ namespace name_sorter
             {
                 Console.WriteLine("You have not designated a file to parse");
             }
-            catch (InvalidFileException ife)
+            catch (Exception ex)
             {
-                Console.WriteLine(ife.Message);
-            }
-            catch (InvalidNameException ine)
-            {
-                Console.WriteLine(ine.Message);
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e);
+                Console.WriteLine(ex.Message);
             }
         }
 
@@ -65,13 +57,9 @@ namespace name_sorter
             {
                 Console.WriteLine("You have not designated a file to parse");
             }
-            catch (InvalidFileException ife)
+            catch (Exception ex)
             {
-                Console.WriteLine(ife.Message);
-            }
-            catch (InvalidNameException ine)
-            {
-                Console.WriteLine(ine.Message);
+                Console.WriteLine(ex.Message);
             }
         }
     }
